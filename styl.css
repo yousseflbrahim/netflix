@@ -1,0 +1,619 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black ;
+}
+
+header{
+    width: 100%;
+    height: 75vh;
+    background: url(./bac.jpg) center center/cover no-repeat  ;
+    position: relative;
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.7);
+}
+
+header *{
+    z-index: 10000;
+}
+
+header .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav h1{
+    padding-top: 10px;
+    padding-left: 200px;
+    text-transform: uppercase;
+    color: rgb(229,9,20);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+header .nav div {
+    padding-right: 150px;
+    padding-top: 10px;
+}
+
+header .nav div a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 30px;
+    display: inline-block;
+    padding: 4px 8px;
+    background:rgb(229,9,20) ;
+    font-size: 17px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+header .nav div button{
+    padding: 4px 10px;
+    font-size: 17px;
+}
+
+header .main{
+    text-align: center;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+header .main h1{
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+header .main h2{
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+header .main h3{
+    padding-bottom: 30px;
+    font-size: 25px;
+    font-weight:100;
+    cursor: pointer; 
+}
+
+header .main div{
+    display:flex;
+    align-items: center;
+}
+
+header .main .gygy input{
+    margin-right: 35px;
+    padding-top:15px ;
+    padding-bottom: 15px;
+    padding-right: 100px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+header .main .gygy button{
+    padding: 15px 35px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    background: rgb(229,9,20);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+header .main div button:hover{
+    background-color:rgba(229, 9, 20, 0.645) ;
+}
+
+.vesablty{
+    height: 7.5px;
+    background-color: rgb(74, 73, 73);
+    width: 100%;
+}
+
+.contanet section{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    height: 80vh;
+    width: 100%;
+}
+
+.contanet section div{
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+     /* flex-direction: column;
+    padding-right: 100px;
+    margin-right: 200px; */
+     width: 50%;
+     padding:300px 0 0 0; 
+}
+
+.contanet section div h1{
+    font-size: 60px;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.contanet section div p{
+    font-size: 25px;
+    padding-left: 60px;
+    margin-left: 70px;
+    gap: 10px;
+    text-align: center;
+}
+
+.contanet section img{
+    width:600px;
+    margin-top: 150px;
+    /* width: 50%; */
+    margin-right:100px;
+    background:url(./Oppenheimer-2023.jpg) center center/cover no-repeat  ;
+    height:500px;
+}
+
+.contanet2{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.contanet2 *{
+    margin: auto;
+}
+
+.contanet2 div{
+    width:45%;
+    margin-right: 200px;
+    margin-top:200px;
+}
+
+.contanet2 h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.contanet2 h3{
+    font-size: 30px;
+}
+
+.contanet2 img{
+    width: 500px;
+    margin-left: 130px;
+    margin-top: 100px;
+}
+
+.content3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content3 div{
+    display: flex;
+    justify-content:center;
+    color: #fff;
+    flex-direction:column;
+    width: 50%;
+    padding-left: px;
+}
+
+.content3  h1{
+    font-size: 55px;
+    font-weight: 800;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.content3  h3{
+    font-size: 25px;
+    font-weight: 500;
+    padding-left:200px;
+    padding-top: 10px;
+}
+
+.content3 img{
+    width: 500px;
+    margin-right:100px ;
+    margin-top: 100px;
+}
+
+.contant4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 60vh;
+}
+
+.contant4 div{
+    width: 30%;
+}
+
+.contant4 div h1{
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+
+.contant4 div h3{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contant4 img{
+    width: 500px;
+}
+
+.contanat5{
+    width: 100%;
+}
+
+.contanat5 h1{
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.contanat5 h1::first-letter{
+    color: rgb(229,9,20);
+}
+
+.contanat5 #cont{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 200px;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.contanat5 #cont button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:30px 40px ;
+    font-size: 22.5px;
+    background: rgb(46, 46, 46);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.contanat5 #cont button:hover{
+    background: rgba(128, 128, 128, 0.568);
+}
+
+.contanat5 h3{
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+    font-size: 22px;
+}
+
+.contanat5 .gygy{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top:25px;
+    margin-bottom: 50px;
+
+}
+
+.contanat5 .gygy button{
+    padding: 15px 35px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    background: rgb(229,9,20);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contanat5 .gygy button:hover{
+    background-color:rgba(229, 9, 20, 0.645) ;
+}
+
+.contanat5 .gygy input{
+    padding-top:15px ;
+    padding-bottom: 15px;
+    padding-right: 100px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.coll{
+    width: 100%;
+    display: inline-block;
+}
+
+.coll #title{
+    margin-top:70px ;
+    display: inline-block;
+    font-size: 18px;
+    color: rgba(193, 190, 190, 0.83);
+    margin-left: 200px;
+}
+
+.coll .all-coll {
+    width: 80%;
+    margin-left:200px;
+    margin-top: 30px;
+}
+
+.coll .all-coll a{
+    margin-bottom: 30px;
+    display: inline-block;
+    margin-left: 50px;
+    color:rgba(240, 232, 232, 0.83) ;
+    
+}
+
+.coll .all-coll a:hover{
+    color: rgb(229,9,20);
+}
+
+#end{
+    width: 100%;
+    height: 25vh;
+}
+
+@media (max-width:950px){
+
+    header .nav h1{
+        font-size: 20px;
+        padding-left:20px ;
+    }
+
+    header .nav div{
+        padding-right: 30px;
+    }
+
+    header .nav div button{
+        padding: 4px 4px;
+        font-size: 16px;
+    }
+
+    header .nav div a{
+        margin-right: 16px;
+        display: inline-block;
+    }
+
+    header .main h1{
+        font-size:30px;
+        width: 80%;
+        padding-right:30px ;
+        font-weight: 700;
+        /* padding-bottom: 200px; */
+    }
+
+    header .main h2{
+        font-size: 15px;
+        /* padding-: 200px; */
+        padding-right: 15px;
+    }
+
+    header .main h3{
+        font-size: 15px;
+        width:60%;
+        padding-right: 15px;
+    }
+
+    header .main div{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    header .main .gygy input{
+        padding-right: 50px;
+    }
+
+    header .main .gygy button{
+        margin-right: 30px;
+    }
+
+    .contanet section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contanet section div{
+        width: 100%;
+        padding:0 100px 0 0;
+    }
+
+    .contanet section div h1{
+        font-size: 30px;
+        width: 100%;
+        padding-left: 30px;
+        padding-top: 100px;
+        margin-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+    }
+
+    .contanet section div p{
+        font-size: 20px;
+        width: 90%;
+        padding-left:0px ;
+        margin-left:60px ;
+    }
+
+    .contanet section img{
+        width: 300px;
+        margin-bottom: 250px;
+        margin-left: 50px;
+    }
+
+    .contanet2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contanet2 h1{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .contanet2 div{
+        padding-left: 0px;
+        width: 90%;
+        padding-bottom:300px ;
+    }
+
+    .contanet2 h3{
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+    .contanet2 img{
+        width: 250px;
+        margin-left: 65px;
+        margin-top: 50px;
+    }
+
+    .content3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content3 div{
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .content3  h1{
+        font-size: 25px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .content3  h3{
+        font-size: 18px;
+        padding-bottom: 20px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: 90%;
+    }
+
+    .content3 img{
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        margin-left: 80px;
+    }
+
+    .contant4{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contant4 img{
+        width: 300px;
+        margin-top: 100px;
+    }
+
+    .contant4 div h1{
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+    }
+
+    .contant4 div h3{
+        font-size: 20px;
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    .contant4 div{
+        width: 90%;
+    }
+
+    .contanat5 h1{
+        font-size: 40px;
+    }
+
+    .contanat5 #cont{
+        margin-left: 50px;
+    }
+
+    .contanat5 h3{
+        font-size: 17px;
+        width: 80%;
+        text-align: center;
+        padding-left: 50px;
+    }
+
+    .contanat5 .gygy{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contanat5 .gygy input{
+        width:80%;
+        margin-left: 25px;
+    }
+
+    .contanat5 .gygy button{
+        width: 50%;
+        margin-left: 86px;
+    }
+
+    .coll #title{
+        margin-top:25px;
+        margin-left:30px;
+    }
+
+    .coll .all-coll{
+        margin-left:0;
+        
+    }
+}
